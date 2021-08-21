@@ -71,7 +71,7 @@ public class SignServiceImpl implements SignService {
             String resultSign = Base64.getEncoder().encodeToString(cmsWithSign);
             LOG.info("**CMS** {}", resultSign);
             Path pathToSave = Paths.get("src/main/resources/sign.sig");
-            Files.write(pathToSave, cmsWithSign);
+//            Files.write(pathToSave, cmsWithSign);
 //            try (OutputStream stream = new FileOutputStream("/result.sign")) {
 //                stream.write(cmsWithSign);
 //            }
